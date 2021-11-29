@@ -8,6 +8,7 @@
 body {
     width: 80%;
     margin: auto;
+    font-family: sans-serif;
 }
 
 /* logo */
@@ -18,11 +19,15 @@ img#logo-img {
 }
 
 /* menù navigazione */
+nav {
+    margin: 40px 0px;
+}
+
 nav ul li {
     display: inline;
     list-style: none;
     text-transform: uppercase;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 nav ul li a {
@@ -62,23 +67,33 @@ img#img-banner {
     color: #fff;
 }
 
+.second-part {
+    font-size: 0.8rem;
+}
+
 /* inizio main */
 main {
+    margin: 40px 0px;
+}
+
+main::after{
     content: '';
     display: table;
     clear: both;
 }
 
-/* main div.title {
-    height: 50px;
-} */
+main div.title {
+    margin-bottom: 40px;
+}
 
 h1.title-main {
     text-transform: capitalize;
 }
 
-h4.description {
+h3.description {
     color: grey;
+    font-size: 0.8rem;
+    font-weight: 300;
 }
 
 div.float {
@@ -90,6 +105,7 @@ div img.img-main {
     height: 200px;
     object-fit: cover;
     border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 .float.left {
@@ -119,8 +135,29 @@ div div.overlay-img {
     border-radius: 20px;
 }
 
+div h3 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+div.float p {
+    color: grey;
+    font-size: 0.8rem;
+}
 /* inizio footer */
 footer {
-    height: 100px;
-    background-color: blueviolet;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+footer h3.footer {
+    font-weight: 300;
+}
+
+#heart {
+    color: red;
+    font-size: 3rem;
+    vertical-align: middle
 }
